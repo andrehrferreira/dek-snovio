@@ -1,0 +1,36 @@
+{
+    "name": "@dekproject/snovio",
+    "version": "0.0.1",
+    "description": "Snov.io interface plugin for DEK",
+    "main": "./build/index.js",
+    "scripts": {
+        "test": "mocha",
+        "dev": "npm run build && babel-node sample --presets env",
+        "build": "babel src -s -D -d build --presets env"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dekproject/snovio.git"
+    },
+    "keywords": [
+        "dek",
+        "snovio",
+        "Snov.io"
+    ],
+    "author": "Andre Ferreira <andre@vigiadepreco.com.br>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dekproject/snovio/issues"
+    },
+    "homepage": "https://github.com/dekproject/snovio#readme",
+    "dependencies": {
+        "snovio-api": "^0.0.1"
+    },
+    "devDependencies": {
+        "@dekproject/scope": "^1.1.4",
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "dotenv": "^6.2.0",
+        "mocha": "^6.0.1"
+    }
+}
